@@ -24,5 +24,11 @@ public class UserRegistrationTest {
         Assertions.assertTrue(actualEmail);
         System.out.println("Email Successfully Validate.");
     }
+    @Test
+    void givenMobileNumberRerurnTrue(){
+        boolean actualMobileNumber = userRegistration.validateMobileNumber("7730006563");
+        Assertions.assertTrue(actualMobileNumber);
+        System.out.println("Mobile Number Successfully Validate.");
+    }
 
 }
