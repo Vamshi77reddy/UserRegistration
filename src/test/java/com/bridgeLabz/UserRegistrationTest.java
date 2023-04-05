@@ -18,4 +18,11 @@ public class UserRegistrationTest {
         Assertions.assertTrue(actualFirstName);
         System.out.println("LastName Successfully Validate.");
     }
+    @Test
+    void givenEmailRerurnTrue(){
+        boolean actualEmail = userRegistration.validateEmail("Vamshireddy2@gmail.com");
+        Assertions.assertTrue(actualEmail);
+        System.out.println("Email Successfully Validate.");
+    }
+
 }

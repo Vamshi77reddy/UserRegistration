@@ -22,5 +22,16 @@ public class UserRegistration {
         else
             return false;
     }
+    public boolean validateEmail(String eMail) {
+
+        System.out.print("Enter Email id:- ");
+        Pattern pattern2 = Pattern.compile("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$");
+        Matcher matcher2 = pattern2.matcher(eMail);
+        if (matcher2.matches()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
