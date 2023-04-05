@@ -30,5 +30,10 @@ public class UserRegistrationTest {
         Assertions.assertTrue(actualMobileNumber);
         System.out.println("Mobile Number Successfully Validate.");
     }
-
+    @Test
+    void givenPasswordRerurnTrue(){
+        boolean actualMobileNumber = userRegistration.validatePassword("Vamshivv");
+        Assertions.assertTrue(actualMobileNumber);
+        System.out.println("Password Successfully Validate.");
+    }
 }
