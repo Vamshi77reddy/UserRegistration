@@ -49,7 +49,7 @@ public class UserRegistration {
         System.out.print("Enter the Password:- ");
 
         //(?=.*[A-Z])(?=.*[0-9])(?=.*
-        Pattern pattern4 = Pattern.compile("^[a-zA-Z].{8,}$");
+        Pattern pattern4 = Pattern.compile("^[a-zA-Z0-9]{8,}$");
         Matcher matcher4 = pattern4.matcher(password);
         if (matcher4.matches())
             return true;
