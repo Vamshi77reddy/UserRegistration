@@ -67,7 +67,7 @@ public class UserRegistrationTest {
         boolean email6 = userRegistration.validateEmail(text6);
         Assertions.assertTrue(email6);
 
-        System.out.println("All test case successfully Passed!!!!");
+        System.out.println("All test case successfully PasseD!!!!");
 
     }
 }
