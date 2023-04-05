@@ -32,7 +32,7 @@ public class UserRegistrationTest {
     }
     @Test
     void givenPasswordRerurnTrue(){
-        boolean actualMobileNumber = userRegistration.validatePassword("Vamshivv");
+        boolean actualMobileNumber = userRegistration.validatePassword("vamshivV");
         Assertions.assertTrue(actualMobileNumber);
         System.out.println("Password Successfully Validate.");
     }
