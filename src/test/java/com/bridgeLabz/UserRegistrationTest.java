@@ -12,4 +12,10 @@ public class UserRegistrationTest {
         Assertions.assertTrue(actualValue);
         System.out.println("FirstName Successfully Validate.");
     }
+    @Test
+    void givenLastNameReturnTrue(){
+        boolean actualFirstName = userRegistration.validateLastName("Reddy");
+        Assertions.assertTrue(actualFirstName);
+        System.out.println("LastName Successfully Validate.");
+    }
 }
